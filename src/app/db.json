@@ -1,0 +1,16 @@
+{
+  "students": [
+    {
+      "name": "Harry Potter",
+      "yearOfBirth": "1980",
+      "patronus": "stag",
+      "image": "http://hp-api.herokuapp.com/images/harry.jpg"
+    },
+    {
+      "name": "Hermione Granger",
+      "yearOfBirth": "1979",
+      "patronus": "otter",
+      "image": "http://hp-api.herokuapp.com/images/hermione.jpeg"
+    }
+  ]
+}
