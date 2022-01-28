@@ -9,16 +9,20 @@ import {Student } from './model/students';
 })
 export class AppComponent  {
  
- 
-  display: string = 'none'
+  num:number;
+  display: string = 'none';
+  isForm: string = 'none';
   students: Student[];
   
   constructor(private http: httpService) {}
 
   
 
-public getBachelor(){
-  this.display = 'block';
+public getBachelor(num:number){
+  if(num==0){
+    this.display = 'block';
+  }
+  
   this.http.getStudents().subscribe(
     data => {
       this.students = data;
@@ -26,4 +30,14 @@ public getBachelor(){
     
   )
 }
+
+// formulario
+showForm(num:number){
+  if(num==1){
+    this.isForm = 'block';
+  }
+  
+}
+
+
 }

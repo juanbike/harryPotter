@@ -1,0 +1,16 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+  <p>
+    <label for="firstname">First Name </label>
+    <input
+      type="text"
+      id="firstname"
+      name="firstname"
+      formControlName="firstname"
+    />
+  </p>
+
+  <div *ngIf="!firstname?.valid && (firstname?.dirty || firstname?.touched)">
+    <div [hidden]="!firstname.errors.required">First Name is required</div>
+    <div [hidden]="!firstname.errors.minlength">Min Length is 10</div>
+  </div>
+</form>
