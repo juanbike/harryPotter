@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-add-student',
+  selector: 'appStudent',
   templateUrl: './add-student.component.html',
   styleUrls: ['./add-student.component.css']
 })
