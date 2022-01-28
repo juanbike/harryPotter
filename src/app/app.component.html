@@ -5,7 +5,7 @@
 </div>
 
 <div class="form-group container">
-<button
+<button 
   type="button"
   class="btn btn-primary btn-sm mb-2"
   (click)="getBachelor()"
@@ -14,7 +14,7 @@
 </button>
 </div>
 
-<div class="container">
+<div [ngStyle]="{'display': display}" class="container">
 <table class="table table-dark table-striped table-bordered row-border hover">
   <thead>
     <tr>

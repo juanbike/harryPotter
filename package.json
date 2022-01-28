@@ -22,7 +22,7 @@
     "zone.js": "^0.11.4"
   },
   "scripts": {
-    "jserver": "json-server --watch db.json ",
+    "dev": "json-server --watch db.json ",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",

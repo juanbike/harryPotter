@@ -10,7 +10,7 @@ import {Student } from './model/students';
 export class AppComponent  {
  
  
-
+  display: string = 'none'
   students: Student[];
   
   constructor(private http: httpService) {}
@@ -18,6 +18,7 @@ export class AppComponent  {
   
 
 public getBachelor(){
+  this.display = 'block';
   this.http.getStudents().subscribe(
     data => {
       this.students = data;
